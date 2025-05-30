@@ -22,4 +22,20 @@ let teleUser={
 }
 
 // console.log(teleUser)
-console.log(teleUser.fullname.firstname)
+// console.log(teleUser.fullname.firstname)
+
+// somhting more about Object
+
+const course={
+    name:"js in hindi ",
+    courseInstructor:"Hitesh chaudhry", 
+    courseFee:"999"
+}
+
+console.log(course.courseInstructor)
+
+const {courseInstructor:instructor}=course   //destructuring in javaScript
+
+console.log(instructor)
+
+
