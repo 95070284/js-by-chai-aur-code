@@ -33,4 +33,38 @@ function isUserLoggedIn(username)
     console.log(`Congratulations ${username} you are successfully logged in.`)
 }
 
-isUserLoggedIn("mohdtalib503")
+// isUserLoggedIn("mohdtalib503")
+
+//==============================================================
+
+function listPrice(...num){
+    return num
+
+}
+
+// console.log(listPrice(400,388,299,499, 299))
+
+let product={
+    name:"maggie",
+    quantity:2,
+    price:31
+}
+
+function listProduct(anyobject){
+    
+    let products=`title:${anyobject.name} Quantity:${anyobject.quantity} price:${anyobject.quantity}*${anyobject.price}=${anyobject.quantity*anyobject.price}`
+    return products
+}
+
+// console.log(listProduct(product))
+
+const myarr=[100,300,400,500]
+
+function getSecondValue(getArray){
+ console.log(getArray[1])
+}
+
+// getSecondValue(myarr)
+
+getSecondValue([300,100,200,600,500])
+
