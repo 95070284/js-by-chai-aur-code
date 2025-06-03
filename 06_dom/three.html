@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning with chai aur code</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+
+    
+</body>
+
+<script>
+    const newDiv=document.createElement('div')
+    newDiv.className="firstChild"
+    newDiv.id=" first-id"
+    newDiv.setAttribute("title", "main-heading h1-heading")
+
+    newDiv.style.backgroundColor='green'
+    newDiv.style.padding="15px"
+    newDiv.style.border="2px solid #fff"
+    newDiv.style.borderRadius='7px'
+    newDiv.innerText="I am learning js with hitesh bhai "
+    
+    const addTextNode=document.createTextNode("I learning with chai aur code")
+    newDiv.appendChild(addTextNode)
+    console.log(newDiv)
+    document.body.appendChild(newDiv)
+
+
+</script>
+</html>
