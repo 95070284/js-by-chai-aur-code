@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn js | Chai aur code</title>
+    <style>
+     body{
+        background-color: #212121;
+        color:#fff;
+     }
+    
+     #main{
+        margin:auto;
+     }
+    </style>
+</head>
+<body>
+    
+    <div >
+        <h1 id="main">Learn JavaScript by Chai aur code</h1>
+        <button class="start">start</button>
+        <button class="stop">Stop</button>
+    </div>
+    
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log('Mohd Talib')
+    // },2000)
+
+// const refer=function(str){
+//     console.log(str)
+// }
+// setTimeout(refer, 2000, 'Mohammad')
+
+// setTimeout(function(){
+// },2000)
+
+let start=function(){
+    document.querySelector('.stop').addEventListener('click', function(){
+        document.querySelector('h1').innerHTML="Internet best series"
+    })
+}
+
+setTimeout(start,2000)
+
+
+
+</script>
+</html>
