@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment | Code aur chai</title>
+</head>
+
+<body>
+    <h1>stat or stop printing</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script>
+    let intervalId
+     let start=function(){
+        intervalId=setInterval(function(){
+         console.log('Talib',Date.now())
+       },2000)
+     }
+
+    let pause=function(){
+        clearInterval(intervalId)
+        console.log('pause clicked')
+    }
+    document.querySelector('#start').addEventListener('click',start)
+
+    document.querySelector('#stop').addEventListener('click',pause)
+   
+</script>
+
+</html>
